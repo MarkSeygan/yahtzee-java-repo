@@ -1,0 +1,57 @@
+%%% Zapoctak, Neproceduralni programovani 2015/16
+%%% Marek Židek
+%%% Pentomino
+
+/*** otocene a osova soumernost jsou stejne *** /
+
+% kazdy obrazec muze byt otocen a i prevracen, jsou ukladany jako seznam ctvercu relativne vzhledem k levemu hornimu ctverci, pricemz levy > horni
+% muze byt az 8 moznosti otoceni a prevraceni
+
+variantyObrazce('F',[-1,1, -1,2,  0,1, 1,1],   **/  00
+					        *  00
+					        *   0 
+					        */
+		   [ 0,1,  1,1,  1,2, 2,1],     */ 00	
+		   			        *   00
+						*   0
+						*/
+		   [-1,1,  0,1,  2,1, 2,2],	*/  0
+						*  00
+						*   00
+						*/
+		   [-2,1, -1,1, -1,2, 0,1],	*/  0
+						*   00
+						*  00
+						*/
+		   [-1,1,  0,1,  0,2, 1,2],	*/  0
+						*  000
+						*    0
+						*/
+		   [-1,2,  0,1,  0,2, 1,1],	*/   0   
+						*  000
+						*   0
+						*/
+		   [-1,1,  0,1,  0,2, 2,0],	*/  0
+						*  000
+						*  0
+						*/
+		   [ 1,0,  1,1,  1,2, 2,1]).	*/ 0
+						*  000
+						*   0
+						*/
+
+obrazec('F').
+
+%  0   00000 
+%  0
+%  0
+%  0
+%  0
+
+variantyObrazce('I',[1,0, 2,0, 3,0, 4,0],
+           	    [0,1, 0,2, 0,3, 0,4],
+           		x,x,x,x,x,x).
+obrazec('I')
+
+%% a tak dale pro vsechny 
+
