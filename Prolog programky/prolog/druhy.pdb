@@ -1,4 +1,0 @@
-% rozdeleni seznamu prvku styl sudy/lichy...
-sl([],[],[]).
-sl([X|Xs],[X|Ss],Ls):- sl(Xs,Ls,Ss).
-
